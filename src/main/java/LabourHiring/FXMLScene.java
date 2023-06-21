@@ -1,5 +1,4 @@
-package Problem1;
-
+package LabourHiring;
 /**
  * Main author of this code: Subankar Chakraborty
  * Lecturer at CSE, UIU
