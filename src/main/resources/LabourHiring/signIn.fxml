@@ -69,7 +69,7 @@
          <font>
             <Font size="15.0" />
          </font></Button>
-      <Button fx:id="backButton" layoutX="614.0" layoutY="23.0" mnemonicParsing="false" prefWidth="70.0" text="Back&lt;-">
+      <Button fx:id="backButton" layoutX="614.0" layoutY="23.0" mnemonicParsing="false" onAction="#onActionBackButton" prefWidth="70.0" text="Back&lt;-">
          <font>
             <Font size="14.0" />
          </font>
