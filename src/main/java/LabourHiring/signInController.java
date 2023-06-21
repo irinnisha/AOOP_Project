@@ -3,6 +3,7 @@ package LabourHiring;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -60,12 +61,19 @@ public class signInController implements Initializable {
     private String [] items = {"Admin","Worker","User"};
 
     @FXML
-    void onActionBackButton(ActionEvent event) throws IOException {
-        FXMLScene scene = FXMLScene.load("logIn.fxml");
-        Parent root = scene.root;
-        loginController LoginController = (loginController) scene.controller;
-        signIn.primaryStage.setScene(new Scene(root));
+    void onActionBackButton(ActionEvent event) {
+        blackLoginPage();
+    }
 
+    void blackLoginPage() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
+            Parent root = fxmlLoader.load();
+            loginController LoginController = fxmlLoader.getController();
+            backButton.getScene().setRoot(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
