@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
    <children>
-      <ImageView fx:id="backgroundPicture" fitHeight="474.0" fitWidth="707.0" layoutY="-9.0" nodeOrientation="INHERIT" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="backgroundPicture" fitHeight="472.0" fitWidth="721.0" layoutY="-5.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
          <viewport>
             <Rectangle2D width="10.0" />
          </viewport>
@@ -21,19 +21,14 @@
             <Cursor fx:constant="V_RESIZE" />
          </cursor>
          <image>
-            <Image url="@Project%20Image/pexels-ksenia-chernaya-5691518.jpg" />
+            <Image url="@Project Image/pexels-ksenia-chernaya-5691518.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="welcomeMessageLable" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="14.0" style="-fx-background-color: #FFFFE0; -fx-background-radius: 10px; -fx-alignment: center;" text="Welcome to Expert Hiring" textFill="MIDNIGHTBLUE">
-         <font>
-            <Font name="Bai Jamjuree Regular" size="35.0" />
-         </font>
-      </Label>
-      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="333.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="333.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Project Image/signupUserLogo.png" />
          </image></ImageView>
-      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="99.0" text="Create a Account">
+      <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="287.0" layoutY="75.0" text="Create a Account">
          <font>
             <Font name="BM DoHyeon OTF" size="18.0" />
          </font>
@@ -64,8 +59,8 @@
          <image>
             <Image url="@Project Image/key.png" />
          </image></ImageView>
-      <ChoiceBox fx:id="choiceBox" layoutX="281.0" layoutY="310.0" opacity="0.83" prefWidth="150.0" style="-fx-background-color: FFF8DC; -fx-background-position: center;" />
-      <Button fx:id="signUpButton" layoutX="326.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Sign Up">
+      <ChoiceBox fx:id="choiceBox" layoutX="356.0" layoutY="327.0" opacity="0.68" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: Honeydew; -fx-background-position: center;" />
+      <Button fx:id="signUpButton" layoutX="305.0" layoutY="394.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Sign Up">
          <font>
             <Font size="15.0" />
          </font></Button>
@@ -74,5 +69,10 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Label fx:id="signupCatagory" alignment="CENTER" layoutX="242.0" layoutY="327.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white; -fx-font-weight: bold;" text="Choose Catagory" textFill="#180303">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
