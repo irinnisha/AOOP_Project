@@ -1,9 +1,11 @@
 package LabourHiring;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -14,7 +16,7 @@ public class signIn extends Application {
     public void start(Stage stage) throws Exception {
             primaryStage = stage;
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("signIn.fxml")));
-            Scene scene = new Scene(root,600,400);
+            Scene scene = new Scene(root,700,450);
             stage.setTitle("Sign Up Page");
             stage.setScene(scene);
             primaryStage.setResizable(false);

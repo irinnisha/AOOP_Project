@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="380.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
    <children>
       <ImageView fx:id="backgroundPicture" fitHeight="474.0" fitWidth="707.0" layoutY="-9.0" nodeOrientation="INHERIT" opacity="0.88" pickOnBounds="true" preserveRatio="true">
          <viewport>
@@ -38,7 +38,7 @@
             <Font name="BM DoHyeon OTF" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="userNameTextfield" layoutX="221.0" layoutY="165.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
+      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="221.0" layoutY="165.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
          <font>
             <Font size="14.0" />
          </font></TextField>
@@ -46,12 +46,12 @@
          <image>
             <Image url="@Project Image/icons8-user-50.png" />
          </image></ImageView>
-      <TextField fx:id="userEmailTextfield" layoutX="221.0" layoutY="216.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
+      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="221.0" layoutY="216.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="userPassTextfield" layoutX="221.0" layoutY="268.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
+      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="221.0" layoutY="268.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
          <font>
             <Font size="14.0" />
          </font>
@@ -64,7 +64,7 @@
          <image>
             <Image url="@Project Image/key.png" />
          </image></ImageView>
-      <ChoiceBox fx:id="choiceBox" layoutX="281.0" layoutY="310.0" opacity="0.87" prefWidth="150.0" style="-fx-background-color: #2F4F4F;" />
+      <ChoiceBox fx:id="choiceBox" layoutX="281.0" layoutY="310.0" opacity="0.83" prefWidth="150.0" style="-fx-background-color: FFF8DC; -fx-background-position: center;" />
       <Button fx:id="signUpButton" layoutX="326.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Sign Up">
          <font>
             <Font size="15.0" />

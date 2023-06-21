@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.loginController">
+   <children>
+      <ImageView fx:id="logInImage" fitHeight="500.0" fitWidth="693.0" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Project Image/pexels-daniel-absi-952670.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userEmail" alignment="CENTER" layoutX="221.0" layoutY="165.0" prefHeight="30.0" prefWidth="270.0" promptText="User Email">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
