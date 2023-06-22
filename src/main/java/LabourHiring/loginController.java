@@ -71,7 +71,7 @@ public class loginController {
         Connection connect_database = connect_project.getConnection();
 
 
-        String check = "select count(1) from Labour_Hiring where email='" + userEmail.getText() + "' and password='" + UserPassword.getText() + "'";
+        String check = "SELECT count(1) FROM Admin WHERE email='" + userEmail.getText() + "' AND password='" + UserPassword.getText() + "'";
 
         try {
 
