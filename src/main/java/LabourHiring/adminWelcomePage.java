@@ -6,26 +6,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
 import java.util.Objects;
 
-public class logIn extends Application {
-    public static Stage primaryStage1;
-
+public class adminWelcomePage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        primaryStage1 = stage;
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("logIn.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("adminWelcomePage.fxml")));
         Scene scene = new Scene(root);
-        stage.setTitle("Welcome Expert Hiring");
+        // primaryStage.setFullScreen(true);
+        stage.setTitle("Welcome Admin");
         stage.setScene(scene);
         stage.show();
-        //primaryStage1.setResizable(false);
-
     }
 
     public static void main(String[] args) {
-
         launch(args);
     }
 }

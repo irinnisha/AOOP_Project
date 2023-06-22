@@ -95,14 +95,14 @@ public class loginController {
 
             @FXML
             void onActionSignupButton (ActionEvent event){
-                blackSignInPage();
+
+        blackSignInPage();
             }
             void blackSignInPage () {
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signIn.fxml"));
                     Parent root = fxmlLoader.load();
-                    signInController SignInController = fxmlLoader.getController();
-                    SignUp.getScene().setRoot(root);
+                  SignUp.getScene().setRoot(root);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

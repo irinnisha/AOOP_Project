@@ -69,9 +69,8 @@ public class signInController implements Initializable {
     void blackLoginPage() {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
-            Parent root = fxmlLoader.load();
-            loginController LoginController = fxmlLoader.getController();
-            backButton.getScene().setRoot(root);
+            Parent root1 = fxmlLoader.load();
+            backButton.getScene().setRoot(root1);
         } catch (IOException e) {
             e.printStackTrace();
         }

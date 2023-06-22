@@ -19,6 +19,7 @@ public class signIn extends Application {
             Scene scene = new Scene(root);
             stage.setTitle("Sign Up Page");
             stage.setScene(scene);
+            //primaryStage.setResizable(false);
             stage.show();
         }
 
