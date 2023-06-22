@@ -13,11 +13,7 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
    <children>
-<<<<<<< Updated upstream
-      <ImageView fx:id="backgroundPicture" fitHeight="500.0" fitWidth="707.0" layoutX="-3.0" layoutY="-1.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
-=======
       <ImageView fx:id="backgroundPicture" fitHeight="500.0" fitWidth="700.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
->>>>>>> Stashed changes
          <viewport>
             <Rectangle2D width="10.0" />
          </viewport>
