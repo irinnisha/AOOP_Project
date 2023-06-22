@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
    <children>
-      <ImageView fx:id="backgroundPicture" fitHeight="472.0" fitWidth="721.0" layoutY="-5.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="backgroundPicture" fitHeight="500.0" fitWidth="707.0" layoutX="-3.0" layoutY="-1.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
          <viewport>
             <Rectangle2D width="10.0" />
          </viewport>
@@ -21,7 +21,7 @@
             <Cursor fx:constant="V_RESIZE" />
          </cursor>
          <image>
-            <Image url="@Project Image/pexels-ksenia-chernaya-5691518.jpg" />
+            <Image url="@Project Image/sig.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="signUpLogo" fitHeight="50.0" fitWidth="45.0" layoutX="333.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
