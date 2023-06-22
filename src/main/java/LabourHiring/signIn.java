@@ -16,10 +16,9 @@ public class signIn extends Application {
     public void start(Stage stage) throws Exception {
             primaryStage = stage;
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("signIn.fxml")));
-            Scene scene = new Scene(root,700,450);
+            Scene scene = new Scene(root);
             stage.setTitle("Sign Up Page");
             stage.setScene(scene);
-            primaryStage.setResizable(false);
             stage.show();
         }
 

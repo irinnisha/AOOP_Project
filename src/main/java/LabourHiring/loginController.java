@@ -44,6 +44,8 @@ public class loginController {
 
     @FXML
     void OnActionButton(ActionEvent event) {
+        userEmail.setText("");
+        UserPassword.setText("");
 
     }
 

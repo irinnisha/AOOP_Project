@@ -21,7 +21,7 @@
             <Font size="14.0" />
          </font></TextField>
       <Button fx:id="login" layoutX="275.0" layoutY="274.0" mnemonicParsing="false" onAction="#onActionLoginButton" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: blue;" text="Login" textFill="WHITE" />
-      <Button fx:id="CancelButton" layoutX="281.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnActionButton" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: black;" text="Cancel" textFill="#f7efef">
+      <Button fx:id="CancelButton" layoutX="282.0" layoutY="355.0" mnemonicParsing="false" onAction="#OnActionButton" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: black;" text="Cancel" textFill="#f7efef">
          <font>
             <Font size="14.0" />
          </font>
@@ -42,6 +42,9 @@
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Label fx:id="message_label" alignment="TOP_CENTER" layoutX="275.0" layoutY="117.0" prefHeight="27.0" prefWidth="163.0" />
+      <Label fx:id="message_label" alignment="TOP_CENTER" layoutX="258.0" layoutY="314.0" prefHeight="27.0" prefWidth="197.0" textFill="#8d0c0c">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>
