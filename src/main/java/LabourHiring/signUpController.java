@@ -81,22 +81,11 @@ public class signUpController implements Initializable {
     }
 
     @FXML
-    void onActionBackButton(ActionEvent event) {
-
-        blackLoginPage();
+    void onActionBackButton(ActionEvent event) throws IOException {
+        FXMLScene scene = FXMLScene.load("logIn.fxml");
+        Parent root = scene.root;
+        backButton.getScene().setRoot(root);
     }
-
-    void blackLoginPage() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("logIn.fxml"));
-            Parent root1 = fxmlLoader.load();
-            backButton.getScene().setRoot(root1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
