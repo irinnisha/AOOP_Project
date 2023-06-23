@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signInController">
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LabourHiring.signUpController">
    <children>
       <ImageView fx:id="backgroundPicture" fitHeight="500.0" fitWidth="700.0" nodeOrientation="INHERIT" opacity="0.73" pickOnBounds="true" preserveRatio="true">
          <viewport>
@@ -33,7 +33,7 @@
             <Font name="BM DoHyeon OTF" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="221.0" layoutY="165.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
+      <TextField fx:id="userNameTextfield" alignment="CENTER" layoutX="221.0" layoutY="165.0" onKeyPressed="#onActionNameField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Full Name">
          <font>
             <Font size="14.0" />
          </font></TextField>
@@ -41,12 +41,12 @@
          <image>
             <Image url="@Project Image/icons8-user-50.png" />
          </image></ImageView>
-      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="221.0" layoutY="216.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
+      <TextField fx:id="userEmailTextfield" alignment="CENTER" layoutX="221.0" layoutY="216.0" onKeyPressed="#onActionEmailField" prefHeight="30.0" prefWidth="270.0" promptText="Enter Your Email">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="221.0" layoutY="268.0" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
+      <TextField fx:id="userPassTextfield" alignment="CENTER" layoutX="221.0" layoutY="268.0" onKeyPressed="#onActionPassField" prefHeight="30.0" prefWidth="270.0" promptText="Enter New  Password">
          <font>
             <Font size="14.0" />
          </font>

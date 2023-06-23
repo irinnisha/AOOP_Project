@@ -11,6 +11,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import java.sql.Connection;
 import javafx.scene.control.PasswordField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,6 +44,19 @@ public class loginController {
 
     @FXML
     private Label message_label;
+
+    @FXML
+    void onActionEmailText(KeyEvent event) {
+        if (event.getCode().equals(KeyCode.ENTER)) {
+            UserPassword.requestFocus();
+        }
+
+    }
+    public void onActionPassText(KeyEvent event) {
+        if (event.getCode().equals(KeyCode.ENTER)){
+            login.requestFocus();
+        }
+    }
 
     @FXML
     void OnActionButton(ActionEvent event) {
@@ -86,25 +102,19 @@ public class loginController {
                 }
 
             }
-        }catch(Exception e){
-                    e.printStackTrace();
-                }
-
-            }
-
-
-            @FXML
-            void onActionSignupButton (ActionEvent event){
-
-        blackSignInPage();
-            }
-            void blackSignInPage () {
-                try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signIn.fxml"));
-                    Parent root = fxmlLoader.load();
-                  SignUp.getScene().setRoot(root);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+    }
+
+
+    @FXML
+    void onActionSignupButton(ActionEvent event) throws IOException {
+
+        FXMLScene scene = FXMLScene.load("signUp.fxml");
+        Parent root = scene.root;
+        SignUp.getScene().setRoot(root);
+    }
+
+}
